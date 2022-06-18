@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=38 format=2]
 
 [ext_resource path="res://Scripts/Clock.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://textures/Skill3disable.png" type="Texture" id=19]
 [ext_resource path="res://textures/Skill1press.png" type="Texture" id=20]
 [ext_resource path="res://Korean_Calligraphy.ttf" type="DynamicFontData" id=21]
+[ext_resource path="res://Scenes/SpawnerTest1.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Scenes/SpawnerTest2.tscn" type="PackedScene" id=23]
 
 [sub_resource type="ProceduralSky" id=1]
 sky_top_color = Color( 0.0313726, 0.411765, 0.709804, 1 )
@@ -372,6 +374,10 @@ transform = Transform( -0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107,
 
 [node name="Minion2" parent="Navigation" instance=ExtResource( 4 )]
 transform = Transform( -0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, -0.707107, -55.7085, 1.03689, 59.2942 )
+
+[node name="SpawnerTest1" parent="Navigation" instance=ExtResource( 22 )]
+
+[node name="SpawnerTest2" parent="Navigation" instance=ExtResource( 23 )]
 
 [node name="PlayerNav" type="Navigation" parent="."]
 
